@@ -1,0 +1,13 @@
+{
+  "name": "TwentyFive",
+  "description": "Pomodoro App",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/assets/icon-128.png"
+  },
+  "developer": {
+    "name": "Maurizio Pedriale",
+    "url": "https://twitter.com/mpedriale"
+  },
+  "default_locale": "en"
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TwentyFive</title>
+    <link rel="stylesheet" href="/assets/css/foundation.min.css" />
+    <link rel="stylesheet" href="/assets/fonts/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="/assets/css/twentyfive.css" />
+    <script src="/assets/js/modernizr.js"></script>
+  </head>
+  <body>
+
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name"><h1 class="inset">TwentyFive</h1></li>
+      </ul>
+    </nav>     
+    <div class="row" id="timer">
+      <p><span id="min">25</span>:<span id="sec">00</span></p>
+    </div>
+    <ul class="small-block-grid-2 tf-buttons main-btns">
+      <li><a href="#" class="start-btn button radius round">START</a></li>
+      <li><a href="#" class="stop-btn button radius round disabled alert">STOP</a></li>
+    </ul>
+    <ul class="small-block-grid-1 tf-buttons break-btns">
+      <li><a href="#" class="stopbreak-btn button radius round success">Get back to work!</a></li>
+    </ul>        
+    <footer>
+      <a href="#" data-reveal-id="infoModal" class="infolink"><i class="fi-info"></i></a>
+    </footer>
+
+    <div id="infoModal" class="reveal-modal" data-reveal> 
+      <p class="lead">Twentyfive</p> 
+      <p>A Pomodoro&reg; timer app. </p> 
+      <p>https://twitter.com/mpedriale</p>
+      <p>pomodorotechnique.com</p>
+      <p>Developer: mamoo</p>
+      <p>Fonts: Alex Brush, Monofonto</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/foundation.min.js"></script>
+    <script src="/assets/js/foundation.reveal.js"></script>
+    <script src="/assets/js/twentyfive.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

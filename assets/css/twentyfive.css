@@ -1,0 +1,69 @@
+  body{
+    background:
+      radial-gradient(black 15%, transparent 16%) 0 0,
+      radial-gradient(black 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    overflow: hidden;
+  }
+
+  @font-face {
+    font-family: AlexBrush;
+    src: url('/assets/fonts/AlexBrush-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: Monofonto;
+    src: url('/assets/fonts/monofonto.otf');
+  }
+
+
+  footer {
+    @include panel($panel-color, $panel-padding);
+    margin: 0;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: right;
+    padding-right: .7em;
+    padding-bottom: .5em;
+  }
+
+  .top-bar { 
+    opacity: .8;
+    height: 85px;
+  }
+  .top-bar .name h1 {
+    background-color: #363636;
+    font-family: AlexBrush;
+    color: #363636;
+
+    line-height: 85px;
+    font-size: 3.94444rem;
+    margin: 0; 
+    font-weight: normal;
+    width: 100%;
+    display: block;
+    text-align: center; 
+  }
+
+  .inset { text-shadow:#fff 0px 1px 0, #000 0 -1px 0; }
+  
+  .row { color:#ffffff; }
+
+  .tf-buttons {text-align: center;}
+
+  #timer, .tf-buttons { padding-top:2em; }
+  #timer p{
+    font-size: 6em;
+    font-family: Monofonto;
+    text-align: center;    
+  }
+
+  .infolink { color: #ffffff; }
+
+  .break-btns { display: none;}
