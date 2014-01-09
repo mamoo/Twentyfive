@@ -67,3 +67,64 @@
   .infolink { color: #ffffff; }
 
   .break-btns { display: none;}
+
+  .tf-modal { 
+    background:
+      radial-gradient(black 15%, transparent 16%) 0 0,
+      radial-gradient(black 15%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+  }
+
+  a {
+    outline: 0;
+  }
+
+
+  .modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 90%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 10px 5px 10px;
+    color: #fff;    
+    border-radius: 2px;
+    background: #fff;
+    background: -moz-linear-gradient(#222, #000);
+    background: -webkit-linear-gradient(#222, #000);
+    background: -o-linear-gradient(#222, #000);
+  }  
+
+  .modalDialog > div > p { font-size: 0.8em; }
+  .modalDialog > div > h2 { font-size: 1em; color: #fff; border-bottom: 1px solid #fff; }
+
+  .link-overlay {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    /* edit: added z-index */
+    z-index: 1;
+  }

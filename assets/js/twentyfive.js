@@ -121,4 +121,7 @@ window.twentyfive = (function(){
 
 $(function(){
 	twentyfive.init();
+	$('#infoModal').data('reveal-init', {
+    	animation: 'none'
+	});
 });
