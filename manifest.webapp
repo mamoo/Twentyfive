@@ -3,7 +3,11 @@
   "description": "Pomodoro App",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/assets/icon-128.png"
+    "30": "/assets/icon-30.png",
+    "60": "/assets/icon-60.png",
+    "128": "/assets/icon-128.png",
+    "256": "/assets/icon-256.png",
+    "512": "/assets/icon-512.png"
   },
   "developer": {
     "name": "Maurizio Pedriale",
