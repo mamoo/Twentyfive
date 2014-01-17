@@ -108,9 +108,9 @@ window.twentyfive = (function(){
 		$(document).on('break:done', breakCompleted);		
 		$(document).on('timer:done', timerCompleted);
 
-   		stopBreakButton.on("touchstart", touchStopBreakCallback)
-    	startButton.on("touchstart", touchStartCallback);
-    	stopButton.on("touchstart", touchStopCallback);
+   		stopBreakButton.on("touchstart click", touchStopBreakCallback)
+    	startButton.on("touchstart click", touchStartCallback);
+    	stopButton.on("touchstart click", touchStopCallback);
     }
 
 	return {
